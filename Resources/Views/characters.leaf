@@ -1,0 +1,17 @@
+#extend("master"):
+    #export("body"):
+
+        <h1 class="text-xl font-black">Your adventurers team!</h1>
+        <ul>
+        #for(character in characters):
+            <li class="bg-gray-50 rounded-lg p-6 mt-6" >
+                <h3>#(character.name) - <b>⬆️ Niveau: #(character.level)</b></h3>
+                <p>⚔️ Noble force: #(character.strength)</p>
+                <p>🎇 Noble puissance magique: #(character.power)</p>
+                <p>🧪 Vie: #(character.life)</p>
+            </li>
+        #endfor
+        </ul>
+
+    #endexport
+#endextend

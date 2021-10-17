@@ -1,0 +1,5 @@
+#extend("master"):
+    #export("body"):
+        <p>Welcome to Vapor!</p>
+    #endexport
+#endextend
